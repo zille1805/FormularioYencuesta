@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="./css/cssejercicio8.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Encuesta-Ejercicio-8</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo-encuesta.jfif" alt="">
+        <h1>¡ Bienvenidos al Ejercicio 8 !</h1>
+    </header>
+
+    <div id="cuerpo">
+
+        <section class="datosForm" id="desaparecer">
+            <h2> Registro de la Encuesta: </h2>
+            <input class="estyloInput" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+            <div class="alertValidacion" id="alertNombre">
+                <strong>Cuidado!</strong> Campo vacio
+            </div>
+            <input class="estyloInput" type="number" name="edad" id="edad" placeholder="Ingrese su Edad" required>
+            <div class="alertValidacion" id="alertEdad">
+                <strong>Cuidado!</strong>Campo vacio
+            </div>
+            <input class="estyloInput" type="text" name="sexo" id="sexo" placeholder="Ingrese su sexo" required>
+            <div class="alertValidacion" id="alertSexo">
+                <strong>Cuidado!</strong>Campo vacio
+            </div>
+            <input class="estyloInput" type="date" name="nacimiento" id="nacimiento"
+                placeholder="Ingrese su Fecha de Nacimiento" required>
+            <div class="alertValidacion" id="alertNacimiento">
+                <strong>Cuidado!</strong>Campo vacio
+            </div>
+            <input class="estyloInput" type="text" name="direccion" id="direccion" placeholder="Ingrese su Direccion"
+                required>
+            <div class="alertValidacion" id="alertDireccion">
+                <strong>Cuidado!</strong>Campo vacio
+            </div>
+            <input class="estyloInput" type="email" name="email" id="email" placeholder="Ingrese su Email" required>
+            <div class="alertValidacion" id="alertEmail">
+                <strong>Cuidado!</strong>Email no valido o vacio
+            </div>
+            <input class="estyloInput" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"
+                required>
+            <div class="alertValidacion" id="alertPassword">
+                <strong>Cuidado!</strong>Password menor a 8 caracteres
+            </div>
+            <div class="centrarBtn">
+                <button type="submit" class="btn1" id="enviar">Enviar</button>
+            </div>
+        </section>
+        <form id="displayNone">
+            <div class="form-group">
+                <div class="mb-2">
+                    <label for="pregunta1" class="form-label">¿Que objetivo tiene programado a corto plazo?</label>
+                    <textarea class="form-control" id="pregunta1" rows="3"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label for="pregunta2" class="form-label">¿Cual es su nivel de estudios academicos?</label>
+                    <textarea class="form-control" id="pregunta2" rows="3"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label for="pregunta3" class="form-label">¿Tiene mascota?¿Como se llama?</label>
+                    <textarea class="form-control" id="pregunta3" rows="3"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label for="pregunta4" class="form-label">¿Realiza algun deporte?En caso afirmativo espesifique
+                        cual.</label>
+                    <textarea class="form-control" id="pregunta4" rows="3"></textarea>
+                </div>
+                <div   class="alertTerminado" id="terminadoGracias">
+                    <strong> Gracias por realizar la encuesta, podras ver el array por consola.</strong>
+                </div>
+                <div class="centrarBtn">
+                    <button class="btn btn-success" type="submit" id="archivar">Terminar Encuesta</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+    <footer>
+        <h2>Trabajo realizado por Walter Emmanuel Zille.</h2>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/ejercicio8-funciones.js"> </script>
+</body>
+
+</html>
